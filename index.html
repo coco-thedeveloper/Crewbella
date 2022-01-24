@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title>form</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="index.html">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper fl">
+
+<h1>Crewbella<span> </span></h1>
+<div class="form fl">
+ <form method="POST" action="index2.html" onsubmit="return Validate()" name="vform">
+
+<div class="box">
+<p class="name"> FIRST NAME :</p>
+<p>
+<input type="text" name="fname" placeholder="First Name" class="name-inp"></p>
+<p class="name">
+  <div id="name_error" class="val_error"></div> </p>
+  <p class="name"> LAST NAME :</p>
+  <p>
+  <input type="text" name="Lname" placeholder="Last Name" class="name-inp"></p>
+  <p class="name">
+    <div id="name_error" class="val_error"></div> </p>
+
+<p class= "email"> EMAIL :</p>
+<p>
+<input type="email" name="uid" placeholder="Email" class="name-inp"></p>
+<p class="name">
+  <div id="email_error" class="val_error"></div>
+  <p class= "phone"> PHONE NO :</p>
+  <p>
+  <input type="number" name="uid" placeholder="Phone number" class="name-inp"></p>
+  <p class="name">
+    <div id="phone_error" class="phone_error"></div>
+
+<input type="submit" name="sb" value="SUBMIT" class="sub"></p>
+</div>
+</form>
+</div>
+</div>
+</div>
+<style ="text/css">
+
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: #006699;
+            padding: 20px 20px 20px 20px;
+        }
+
+        span::before {
+            content: "Assessment";
+            animation: animate infinite 3s;
+            padding-left: 10px;
+        }
+
+        @keyframes animate {
+
+            0% {
+                content: "Assessment";
+            }
+
+            50% {
+              content: "~";
+            }
+
+            75% {
+                content: "Assessment";
+            }
+        }
+.sub{
+  border-radius: 8px;
+  background: #006699;
+  color: white;
+}
+.name-inp{
+  border-radius: 6px;
+
+}
+
+.head {
+    margin-left: 476px;
+
+}
+body{
+  background: linear-gradient(to top left, #ffffcc 0%, #ccffff 100%);
+  color:#006699;
+}
+.box {
+  border: 4px solid #006699;
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 450px;
+  margin-top: 65px;
+  background: linear-gradient(to bottom, #ffffcc 0%, #33ccff 100%);
+}
+</body>
+</html>
